@@ -1,0 +1,108 @@
+:root{
+    --heading-fonts: "Montserrat", sans-serif;
+    --paragraph-fonts: "Roboto", sans-serif;
+    --style-fonts: "Nothing You Could Do", cursive;
+    --light-bg: rgb(245, 243, 238);
+    --primary-color: #716027;
+    --color-yellow: #fba707;
+    --color-white: #fff;
+    --white: #fff;
+    --color-dark: #000;
+    --gradient: linear-gradient(to bottom right, #ff99ff 0%, var(--primary-color) 80%);
+    --border-info-color: rgba(0, 0, 0, 0.08);
+    --color-red: #fd6a6a;
+    --heading-color: #202a3b;
+    --medium-brown: #bcac94;
+    --dark-bg: #111;
+}
+
+/* ===== Navbar ===== */
+.main_nav {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav_links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav_links a:hover {
+  opacity: 0.8;
+}
+
+.nav_btn {
+  background: #fff;
+  color: var(--primary-color);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.nav_btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== Footer ===== */
+.main_footer {
+  background: var(--dark-bg);
+  color: var(--white);
+  padding: 40px 0;
+  /* margin-top: 100px; */
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer_links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.3s;
+}
+
+.footer_links a:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,36 @@
+
+
+@media only screen and (max-width: 768px){
+    .broch_down_banner .bd_title::before{
+        right: 0;
+    }
+
+    .price_col_one h3{
+        font-size: 24px;
+    }
+
+    .price_col_one del{
+        font-size: 16px;
+    }
+    
+    .price_col_one div:first-child{
+        flex: 1;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    #cd_competency_content .takewaybox h4, #cd_competency_content .takewaybox p{
+        color: #fff;
+    }
+
+    #cd_competency_content .takewaybox::after{
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+    }
+
+    
+
+}
