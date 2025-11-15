@@ -1531,9 +1531,8 @@ body {
     border-radius: 10px;
 }
 
-.course-single-sidebar{
-    position: sticky;
-    top: 0;
+.row, .container, .course-single-sidebar {
+    overflow: visible !important;
 }
 
 /* =============================
