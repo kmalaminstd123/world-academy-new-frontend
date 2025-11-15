@@ -228,12 +228,13 @@ body {
   max-width: 800px;
   margin: auto;
   background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
+  box-shadow: 0px 3px 10px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
   height: 400px;
   transition: all .3s;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 @media screen and (max-width: 992px) {
@@ -245,9 +246,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .blog-slider {
-    min-height: 500px;
+    /* min-height: 500px; */
     height: auto;
-    margin: 180px auto;
+    /* margin: 180px auto; */
   }
 }
 
@@ -453,7 +454,7 @@ body {
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
-  box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+  /* box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4); */
   text-decoration: none;
   font-weight: 500;
   justify-content: center;
@@ -1397,6 +1398,96 @@ body {
     border: 2px solid var(--primary-color);
     transition: all 0.3s linear;
 }
+
+/* assesment css start */
+.assessment-modern .section-heading {
+    font-family: var(--heading-fonts);
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+/* Card Style */
+.am-card {
+    background: var(--color-white);
+    border-radius: 7px;
+    padding: 0;
+    border: 1px solid var(--border-info-color);
+    box-shadow:
+        0 4px 8px rgba(0,0,0,0.04),
+        0 12px 28px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: all .25s ease;
+}
+
+.am-card:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.06),
+        0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.am-card-head {
+    padding: 18px 22px;
+    background: linear-gradient(135deg, var(--light-bg), #f7f4ee);
+    border-bottom: 1px solid var(--border-info-color);
+}
+
+.am-card-head h4 {
+    margin: 0;
+    font-family: var(--heading-fonts);
+    font-size: 20px;
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+/* Body */
+.am-card-body {
+    padding: 24px 22px;
+}
+
+/* Information List */
+.am-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.am-info li {
+    padding: 8px 0;
+    font-size: 15px;
+    color: #444;
+    border-bottom: 1px dashed var(--border-info-color);
+}
+
+.am-info li:last-child {
+    border-bottom: none;
+}
+
+.am-info span {
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+/* Pass Color */
+.pass {
+    color: #068f4c;
+    font-weight: 700;
+}
+
+/* Progress Bar */
+.am-progress {
+    height: 8px;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.am-progress .progress-bar {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+
 
 /* =============================
 =============
