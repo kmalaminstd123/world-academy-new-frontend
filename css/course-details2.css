@@ -990,6 +990,50 @@ body {
     opacity: 0.5;
 }
 
+#cd_learning_outcome {
+    padding: 70px 0;
+}
+
+.outcome_box {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eef0f3;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    position: relative;
+    transition: all .25s ease;
+    padding-bottom: 55px !important;
+}
+
+.outcome_box p {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 500;
+}
+
+.outcome_box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.obn {
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #265367; 
+    opacity: 0.15;
+    user-select: none;
+    transition: 0.3s ease;
+}
+
+.outcome_box:hover .obn {
+    opacity: 0.25;
+}
+
+
 /* recognition boxs start */
 
 :root {
