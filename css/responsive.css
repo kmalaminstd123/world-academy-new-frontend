@@ -12,9 +12,13 @@
     .price_col_one del{
         font-size: 16px;
     }
-    
+
     .price_col_one div:first-child{
         flex: 1;
+    }
+
+    .section_head h2 {
+        text-align: center;
     }
 
 }
@@ -31,6 +35,9 @@
         transition: all 0.3s linear;
     }
 
-    
+    .section_head h2 {
+        font-size: 22px;
+        text-align: center;
+    }
 
 }
