@@ -1,0 +1,15 @@
+.blog-slider {
+    max-width: 768px;
+    width: 100%;
+    margin: 0;
+}
+
+.all_recognition_box .slider {
+    max-width: 768px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.fixed{
+    z-index: 99999;
+}

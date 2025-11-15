@@ -1531,7 +1531,10 @@ body {
     border-radius: 10px;
 }
 
-
+.course-single-sidebar{
+    position: sticky;
+    top: 0;
+}
 
 /* =============================
 =============
