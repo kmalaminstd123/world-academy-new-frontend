@@ -24,9 +24,10 @@
     <!-- animate css -->
     <link rel="stylesheet" href="./css/animate.css">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
     <!-- css links -->
+    <link rel="stylesheet" href="./css/custom_animation.css">
     <link rel="stylesheet" href="./css/course-details2.css">
     <link rel="stylesheet" href="./css/temp_nav_footer.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -50,7 +51,7 @@
         </div>
     </nav>
 
-    <section id="course_deatils_top" class="pb-0">
+    <section id="course_deatils_top" class="pb-0 bg-white">
         <div class="container">
             <div class="row justify-content-between">
 
@@ -74,7 +75,7 @@
                             <div class="price-amount"><span>$120</span><del>$150</del></div>
                             <span class="price-off">35% Off</span>
                         </div>
-                        <a href="#" class="theme-btn w-100"> <i class="fa-solid fa-bag-shopping"></i> Apply Now</a>
+                        <a href="#" class="theme-btn w-100 btn-press"> <i class="fa-solid fa-bag-shopping"></i> Apply Now</a>
                         <div class="more-info">
                             <ul>
                                 <li>
@@ -109,17 +110,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- <div class="include">
-                            <h5>Course Includes</h5>
-                            <ul>
-                                <li>
-                                    <i class="fa-regular fa-circle-check"></i> Full Short Video Materials</li>
-                                <li><i class="fa-regular fa-circle-check"></i> 35+ Downloadable Resources</li>
-                                <li><i class="fa-regular fa-circle-check"></i> Certificate Of Completion</li>
-                                <li><i class="fa-regular fa-circle-check"></i> Virtual Class (Via Zoom)</li>
-                                <li><i class="fa-regular fa-circle-check"></i> Live Session</li>
-                            </ul>
-                        </div> -->
+                        
                         <div class="share">
                             <h5>Social Share</h5>
                             <div class="share-link">
@@ -335,6 +326,8 @@
 
     <section id="cd_objective_content" class="section-st">
 
+        <canvas id="particles"></canvas>
+
         <div class="container">
 
             <div class="section_head">
@@ -481,7 +474,7 @@
                                 <span class="download-icon">
                                     <img src="https://worldacademy.uk/public/images/file.png" alt="">
                                 </span>
-                                <a href="javascript:void(0);" data-toggle="modal" data-target="#courseModal" data-course-id="853"> <span class="download-text">Download Brochure</span></a>
+                                <a href="javascript:void(0);" data-toggle="modal" data-target="#courseModal" data-course-id="853"> <span class="download-text btn-press">Download Brochure</span></a>
                             </span>
                         </button>
                     </div>
@@ -768,8 +761,6 @@
         </div>
     </section>
 
-
-
     <section id="cd_pricing" class="section-st">
         <div class="container">
             <div class="cd_price p-md-5 p-3">
@@ -789,7 +780,7 @@
                         </div>
 
                         <div class="row justify-content-center cd_price_btn_sec mt-md-5 mb-md-0 mt-3 mb-3">
-                            <button class="myBtn">Enroll Now</button>
+                            <button class="myBtn btn-press">Enroll Now</button>
                         </div>
                     </div>
                     <div class="col-md-6 price_cls_det">
@@ -817,6 +808,26 @@
                 </div>
 
                 
+            </div>
+        </div>
+    </section>
+
+    <section id="cd_application_details" class="section-st">
+        <div class="container">
+            <div class="section_head">
+                <h2>Application Process</h2>
+            </div>
+
+            <div class="row">
+                <div class="app_item_box d-flex gap-3 shadow rounded-1 p-3 align-items-center">
+                    <div class="ap_b_icon">
+                        <p><i class="fa-solid fa-certificate"></i></p>
+                    </div>
+                    <div class="ap_b_text">
+                        <h5 class="mb-2">Certificates</h5>
+                        <p>Education Certificate (of Bachelor’s degree/graduate Diploma) & transcripts ( PDF/image format)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

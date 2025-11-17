@@ -168,3 +168,42 @@ var swiper = new Swiper('.blog-slider', {
         clickable: true,
       }
     });
+
+// particles animation
+const c = document.getElementById("particles");
+const ctx = c.getContext("2d");
+
+c.width = window.innerWidth;
+c.height = window.innerHeight;
+
+let particles = [];
+
+for (let i = 0; i < 80; i++) {
+  particles.push({
+    x: Math.random() * c.width,
+    y: Math.random() * c.height,
+    r: Math.random() * 2 + 1,
+    dx: (Math.random() - 0.5) * 0.3,
+    dy: (Math.random() - 0.5) * 0.3
+  });
+}
+
+function animate() {
+  ctx.clearRect(0, 0, c.width, c.height);
+
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 3);
+    ctx.fillStyle = "rgba(0,0,0,0.15)";
+    ctx.fill();
+
+    p.x += p.dx;
+    p.y += p.dy;
+
+    if (p.x < 0 || p.x > c.width) p.dx *= -1;
+    if (p.y < 0 || p.y > c.height) p.dy *= -1;
+  });
+
+  requestAnimationFrame(animate);
+}
+animate();

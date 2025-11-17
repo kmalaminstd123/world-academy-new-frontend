@@ -1,3 +1,26 @@
+:root{
+    --gradient: linear-gradient(to bottom right, #ff99ff 0%, var(--primary-color) 80%);
+    --border-info-color: rgba(0, 0, 0, 0.08);
+    --color-red: #fd6a6a;
+}
+
+
+:root {
+    --heading-fonts: "Montserrat", sans-serif;
+    --paragraph-fonts: "Inter", sans-serif;;
+    --style-fonts: "Nothing You Could Do", cursive;
+    --light-bg: rgb(245, 243, 238);
+    --primary-color: #716027;
+    --color-yellow: #fba707;
+    --color-white: #fff;
+    --color-dark: #000;
+    --gradient: linear-gradient(to bottom right, #ff99ff 0%, var(--primary-color) 80%);
+    --border-info-color: rgba(0, 0, 0, 0.08);
+    --color-red: #fd6a6a;
+    --heading-color: #202a3b;
+    --medium-brown: #bcac94;
+}
+
 .blog-slider {
     max-width: 768px;
     width: 100%;
@@ -24,3 +47,185 @@
     position: sticky;
     top: 0;
 }
+
+
+.course-single-sidebar {
+    position: relative;
+    padding: 30px;
+    background: var(--color-white);
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px 0px rgba(1, 11, 60, 0.1);
+    z-index: 1;
+}
+
+.course-single-sidebar::before{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    opacity: 0.3;
+    --size: 200px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    bottom: 80%;
+    left: 60%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.course-single-sidebar .price-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.course-single-sidebar .theme-btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+}
+
+
+
+.course-single-sidebar .price-wrap .price-off {
+    background: rgb(from var(--color-red) r g b / 0.1);
+    color: var(--color-red);
+    font-weight: 500;
+    padding: 2px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.theme-border-btn, .theme-btn2, .theme-btn {
+    font-size: 16px;
+    color: var(--color-white);
+    padding: 10px 20px;
+    transition: all 0.5s;
+    text-transform: capitalize;
+    position: relative;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    border: none;
+    background: var(--gradient);
+    box-shadow: 0 10px 30px 0 rgba(142, 121, 249, 0.25);
+    z-index: 1;
+}
+
+.theme-btn:hover {
+    color: var(--color-white);
+}
+
+.theme-border-btn::before, .theme-btn2::before, .theme-btn::before {
+    content: "";
+    height: 300px;
+    width: 300px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: -1;
+}
+
+.theme-btn:hover::before{
+    /* background: var(--primary-color); */
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.course-single-sidebar .more-info {
+    color: var(--color-dark);
+    margin-top: 20px;
+}
+
+.course-single-sidebar .more-info ul{
+    padding-left: 0;
+}
+
+.course-single-sidebar .more-info ul span:first-child{
+    color: var(--primary-color);
+}
+
+.course-single-sidebar .more-info ul span:last-child{
+    color: #757f95;
+}
+
+.course-single-sidebar .price-wrap .price-amount span {
+    font-weight: 900;
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.course-single-sidebar .price-wrap .price-amount del{
+    color: #757f95;
+    font-weight: 600;
+}
+
+.course-single-sidebar .more-info li {
+    padding: 8px 0;
+    font-size: 16px;
+    border-bottom: 1px solid var(--border-info-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-single-sidebar .include {
+    margin-top: 20px;
+}
+
+.course-single-sidebar .include h5 {
+    margin-bottom: 15px;
+    color: #fd6a6a;
+}
+
+.course-single-sidebar .include ul{
+    padding-left: 0;
+}
+
+.course-single-sidebar .include li {
+    margin-bottom: 5px;
+}
+
+.course-single-sidebar .share {
+    margin-top: 25px;
+}
+
+.course-single-sidebar .share h5 {
+    margin-bottom: 20px;
+    color: #fd6a6a;
+}
+
+.course-single-sidebar .share-link{
+    display: flex;
+}
+
+.course-single-sidebar .share-link a {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    margin-right: 5px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+}
+
+.course-single-sidebar .share-link a:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.ap_b_icon p{
+    font-size: 20px;
+}
+
