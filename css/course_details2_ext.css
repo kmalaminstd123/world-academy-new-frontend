@@ -10,6 +10,17 @@
     overflow: hidden;
 }
 
-.fixed{
+/* .fixed{
     z-index: 99999;
+} */
+
+#mid_nav{
+    padding: 20px 0 5px 0;
+}
+
+.mid_parent_sec {
+    transition: all 0.3s linear;
+    z-index: 9999;
+    position: sticky;
+    top: 0;
 }
