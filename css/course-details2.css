@@ -756,6 +756,10 @@ body {
     position: relative;
 }
 
+#cd_objective_content #particles{
+    position: absolute;
+}
+
 #cd_objective_content .objectImg {
     position: absolute;
     top: 50%;
