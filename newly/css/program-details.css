@@ -1,0 +1,1202 @@
+/* ========================================
+   Professional Program Details Page Styles
+   ======================================== */
+
+/* ========================================
+   CSS Variables - Color Scheme
+   ======================================== */
+:root {
+    /* Primary Colors from course-details2_ext.css */
+    --pd-primary: #716027;
+    --pd-primary-dark: #5a4d1f;
+    --pd-primary-light: #8c7a3d;
+    --pd-accent: #fba707;
+    --pd-dark: #202a3b;
+    --pd-text: #4a5568;
+    --pd-text-light: #718096;
+    --pd-bg: #f8f9fa;
+    --pd-white: #ffffff;
+    --pd-border: #e2e8f0;
+    --pd-medium-brown: #bcac94;
+    
+    /* Additional Colors */
+    --pd-success: #10b981;
+    --pd-danger: #ef4444;
+    --pd-warning: #f59e0b;
+    --pd-info: #3b82f6;
+    
+    /* Gradients */
+    --pd-gradient-primary: linear-gradient(135deg, var(--pd-primary) 0%, var(--pd-primary-dark) 100%);
+    --pd-gradient-accent: linear-gradient(135deg, var(--pd-accent) 0%, #ff9500 100%);
+    --pd-gradient-hero: linear-gradient(135deg, rgba(113, 96, 39, 0.95) 0%, rgba(32, 42, 59, 0.95) 100%);
+    
+    /* Shadows */
+    --pd-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --pd-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.03);
+    --pd-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.05), 0 20px 48px rgba(0, 0, 0, 0.05);
+    --pd-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Typography */
+    --pd-font-heading: 'Montserrat', sans-serif;
+    --pd-font-body: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --pd-spacing-xs: 0.5rem;
+    --pd-spacing-sm: 1rem;
+    --pd-spacing-md: 1.5rem;
+    --pd-spacing-lg: 2rem;
+    --pd-spacing-xl: 3rem;
+    --pd-spacing-2xl: 4rem;
+    
+    /* Border Radius */
+    --pd-radius-sm: 8px;
+    --pd-radius-md: 12px;
+    --pd-radius-lg: 16px;
+    --pd-radius-xl: 20px;
+    --pd-radius-full: 50px;
+    
+    /* Transitions */
+    --pd-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--pd-font-body);
+    color: var(--pd-text);
+    line-height: 1.6;
+    background-color: var(--pd-white);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--pd-font-heading);
+    color: var(--pd-dark);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.pd-hero {
+    position: relative;
+    background: var(--pd-gradient-hero);
+    padding: 100px 0 80px;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.pd-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.pd-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(251, 167, 7, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(113, 96, 39, 0.15) 0%, transparent 50%);
+}
+
+.pd-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.pd-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: var(--pd-radius-full);
+    color: var(--pd-white);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.pd-hero-badge i {
+    color: var(--pd-accent);
+}
+
+.pd-hero-title {
+    font-size: 3.5rem;
+    color: var(--pd-white);
+    margin-bottom: 16px;
+    font-weight: 900;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.pd-hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--pd-accent);
+    margin-bottom: 24px;
+    font-weight: 600;
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.pd-hero-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 90%;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.pd-hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.pd-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pd-stat-item i {
+    font-size: 2rem;
+    color: var(--pd-accent);
+}
+
+.pd-stat-item strong {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--pd-white);
+    font-weight: 800;
+}
+
+.pd-stat-item span {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pd-hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+/* ========================================
+   Enrollment Card (Hero Sidebar)
+   ======================================== */
+.pd-enrollment-card {
+    background: var(--pd-white);
+    border-radius: var(--pd-radius-xl);
+    padding: 32px;
+    box-shadow: var(--pd-shadow-xl);
+    position: sticky;
+    top: 100px;
+    animation: fadeInRight 0.8s ease-out 0.4s both;
+}
+
+.pd-price-section {
+    margin-bottom: 24px;
+}
+
+.pd-price-tag {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.pd-currency {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--pd-primary);
+}
+
+.pd-amount {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--pd-primary);
+}
+
+.pd-price-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pd-original-price {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: var(--pd-text-light);
+}
+
+.pd-discount-badge {
+    background: linear-gradient(135deg, #def7ec 0%, #d1fae5 100%);
+    color: #065f46;
+    padding: 6px 16px;
+    border-radius: var(--pd-radius-full);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.pd-urgency-banner {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    padding: 12px 16px;
+    border-radius: var(--pd-radius-md);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.pd-urgency-banner i {
+    color: #f59e0b;
+}
+
+.pd-quick-info {
+    margin-bottom: 24px;
+}
+
+.pd-info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--pd-border);
+}
+
+.pd-info-item:last-child {
+    border-bottom: none;
+}
+
+.pd-info-item i {
+    font-size: 1.5rem;
+    color: var(--pd-primary);
+    width: 24px;
+}
+
+.pd-info-item small {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--pd-text-light);
+    margin-bottom: 4px;
+}
+
+.pd-info-item strong {
+    display: block;
+    font-size: 1rem;
+    color: var(--pd-dark);
+    font-weight: 600;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+.pd-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 32px;
+    font-family: var(--pd-font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: var(--pd-radius-full);
+    border: none;
+    cursor: pointer;
+    transition: var(--pd-transition);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.pd-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.pd-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.pd-btn-primary {
+    background: var(--pd-gradient-primary);
+    color: var(--pd-white);
+    box-shadow: 0 4px 15px rgba(113, 96, 39, 0.3);
+}
+
+.pd-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(113, 96, 39, 0.4);
+}
+
+.pd-btn-outline {
+    background: transparent;
+    border: 2px solid var(--pd-white);
+    color: var(--pd-white);
+}
+
+.pd-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.pd-btn-enroll {
+    width: 100%;
+    background: var(--pd-gradient-primary);
+    color: var(--pd-white);
+    box-shadow: 0 4px 15px rgba(113, 96, 39, 0.3);
+    font-size: 1.1rem;
+    padding: 16px;
+}
+
+.pd-btn-enroll:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(113, 96, 39, 0.4);
+}
+
+.pd-btn-light {
+    background: var(--pd-white);
+    color: var(--pd-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pd-btn-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pd-btn-outline-light {
+    background: transparent;
+    border: 2px solid var(--pd-white);
+    color: var(--pd-white);
+}
+
+.pd-btn-outline-light:hover {
+    background: var(--pd-white);
+    color: var(--pd-primary);
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+.pd-section {
+    padding: 80px 0;
+}
+
+.pd-section-header {
+    margin-bottom: 60px;
+}
+
+.pd-section-label {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(113, 96, 39, 0.1) 0%, rgba(251, 167, 7, 0.1) 100%);
+    color: var(--pd-primary);
+    padding: 8px 20px;
+    border-radius: var(--pd-radius-full);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pd-section-title {
+    font-size: 2.5rem;
+    color: var(--pd-dark);
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+/* ========================================
+   Overview Section
+   ======================================== */
+.pd-overview {
+    background: var(--pd-bg);
+}
+
+.pd-content-box {
+    background: var(--pd-white);
+    padding: 40px;
+    border-radius: var(--pd-radius-lg);
+    box-shadow: var(--pd-shadow-md);
+}
+
+.pd-lead-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--pd-dark);
+    margin-bottom: 24px;
+    line-height: 1.8;
+}
+
+.pd-content-box p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.pd-highlight-box {
+    background: var(--pd-gradient-primary);
+    color: var(--pd-white);
+    padding: 32px;
+    border-radius: var(--pd-radius-lg);
+    box-shadow: var(--pd-shadow-lg);
+    position: sticky;
+    top: 100px;
+}
+
+.pd-highlight-box h4 {
+    color: var(--pd-white);
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.pd-highlight-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pd-highlight-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pd-highlight-list li:last-child {
+    border-bottom: none;
+}
+
+.pd-highlight-list i {
+    color: var(--pd-accent);
+    font-size: 1.2rem;
+}
+
+/* ========================================
+   Objectives Section
+   ======================================== */
+.pd-objectives {
+    background: var(--pd-white);
+}
+
+.pd-objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.pd-objective-card {
+    background: var(--pd-white);
+    padding: 32px;
+    border-radius: var(--pd-radius-lg);
+    box-shadow: var(--pd-shadow-md);
+    transition: var(--pd-transition);
+    border: 2px solid transparent;
+}
+
+.pd-objective-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--pd-shadow-xl);
+    border-color: var(--pd-primary);
+}
+
+.pd-objective-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--pd-gradient-primary);
+    border-radius: var(--pd-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pd-objective-icon i {
+    font-size: 1.8rem;
+    color: var(--pd-white);
+}
+
+.pd-objective-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: var(--pd-dark);
+}
+
+.pd-objective-card p {
+    color: var(--pd-text);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========================================
+   Modules Section
+   ======================================== */
+.pd-modules {
+    background: var(--pd-bg);
+}
+
+.pd-modules-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pd-module-item {
+    background: var(--pd-white);
+    border-radius: var(--pd-radius-lg);
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: var(--pd-shadow-sm);
+    transition: var(--pd-transition);
+}
+
+.pd-module-item:hover {
+    box-shadow: var(--pd-shadow-md);
+}
+
+.pd-module-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 32px;
+    cursor: pointer;
+    background: var(--pd-white);
+    transition: var(--pd-transition);
+}
+
+.pd-module-header:hover {
+    background: var(--pd-bg);
+}
+
+.pd-module-number {
+    width: 60px;
+    height: 60px;
+    background: var(--pd-gradient-primary);
+    color: var(--pd-white);
+    border-radius: var(--pd-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.pd-module-header h4 {
+    flex: 1;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.pd-module-toggle {
+    width: 40px;
+    height: 40px;
+    background: var(--pd-bg);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--pd-transition);
+}
+
+.pd-module-toggle:hover {
+    background: var(--pd-primary);
+    color: var(--pd-white);
+}
+
+.pd-module-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.pd-module-item.active .pd-module-toggle i {
+    transform: rotate(180deg);
+}
+
+.pd-module-content {
+    padding: 0 32px 24px 112px;
+    display: none;
+    color: var(--pd-text);
+    line-height: 1.8;
+}
+
+.pd-module-item.active .pd-module-content {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+/* ========================================
+   Recognition Section
+   ======================================== */
+.pd-recognition {
+    background: var(--pd-white);
+}
+
+.pd-recognition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.pd-recognition-card {
+    background: var(--pd-white);
+    padding: 40px;
+    border-radius: var(--pd-radius-lg);
+    box-shadow: var(--pd-shadow-md);
+    text-align: center;
+    transition: var(--pd-transition);
+    border: 2px solid var(--pd-border);
+}
+
+.pd-recognition-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--pd-shadow-xl);
+    border-color: var(--pd-primary);
+}
+
+.pd-recognition-logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.pd-recognition-logo img {
+    max-height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.pd-recognition-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: var(--pd-primary);
+}
+
+.pd-recognition-card p {
+    color: var(--pd-text);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========================================
+   Competencies Section
+   ======================================== */
+.pd-competencies {
+    background: var(--pd-bg);
+}
+
+.pd-competency-card {
+    background: var(--pd-white);
+    padding: 32px;
+    border-radius: var(--pd-radius-lg);
+    box-shadow: var(--pd-shadow-md);
+    height: 100%;
+    transition: var(--pd-transition);
+    border-left: 4px solid var(--pd-primary);
+}
+
+.pd-competency-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--pd-shadow-lg);
+}
+
+.pd-competency-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, rgba(113, 96, 39, 0.1) 0%, rgba(251, 167, 7, 0.1) 100%);
+    border-radius: var(--pd-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pd-competency-icon i {
+    font-size: 1.5rem;
+    color: var(--pd-primary);
+}
+
+.pd-competency-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--pd-dark);
+}
+
+.pd-competency-card p {
+    color: var(--pd-text);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========================================
+   Assessment Section
+   ======================================== */
+.pd-assessment {
+    background: var(--pd-white);
+}
+
+.pd-assessment-card {
+    background: var(--pd-white);
+    border-radius: var(--pd-radius-lg);
+    box-shadow: var(--pd-shadow-md);
+    overflow: hidden;
+    height: 100%;
+    transition: var(--pd-transition);
+}
+
+.pd-assessment-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--pd-shadow-xl);
+}
+
+.pd-assessment-header {
+    background: var(--pd-gradient-primary);
+    color: var(--pd-white);
+    padding: 24px;
+    text-align: center;
+}
+
+.pd-assessment-header i {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.pd-assessment-header h4 {
+    color: var(--pd-white);
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.pd-assessment-body {
+    padding: 24px;
+}
+
+.pd-assessment-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--pd-border);
+}
+
+.pd-assessment-detail span {
+    color: var(--pd-text-light);
+    font-size: 0.9rem;
+}
+
+.pd-assessment-detail strong {
+    color: var(--pd-dark);
+    font-weight: 600;
+}
+
+.pd-assessment-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin-top: 8px;
+}
+
+.pd-assessment-pass span {
+    color: var(--pd-text);
+    font-weight: 600;
+}
+
+.pd-assessment-pass strong {
+    color: var(--pd-success);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.pd-progress-bar {
+    height: 8px;
+    background: var(--pd-bg);
+    border-radius: var(--pd-radius-full);
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.pd-progress-fill {
+    height: 100%;
+    background: var(--pd-gradient-primary);
+    border-radius: var(--pd-radius-full);
+    transition: width 1s ease-out;
+}
+
+.pd-assessment-note {
+    margin-top: 16px;
+    padding: 12px;
+    background: var(--pd-bg);
+    border-radius: var(--pd-radius-md);
+    font-size: 0.9rem;
+    color: var(--pd-text);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.pd-assessment-note i {
+    color: var(--pd-primary);
+    margin-top: 2px;
+}
+
+/* ========================================
+   Application Section
+   ======================================== */
+.pd-application {
+    background: var(--pd-bg);
+}
+
+.pd-application-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.pd-application-card {
+    background: var(--pd-white);
+    padding: 32px;
+    border-radius: var(--pd-radius-lg);
+    box-shadow: var(--pd-shadow-md);
+    display: flex;
+    gap: 20px;
+    transition: var(--pd-transition);
+    border: 2px solid transparent;
+}
+
+.pd-application-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--pd-shadow-lg);
+    border-color: var(--pd-primary);
+}
+
+.pd-application-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--pd-gradient-primary);
+    border-radius: var(--pd-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pd-application-icon i {
+    font-size: 1.8rem;
+    color: var(--pd-white);
+}
+
+.pd-application-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--pd-dark);
+}
+
+.pd-application-content p {
+    color: var(--pd-text);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   CTA Section
+   ======================================== */
+.pd-cta {
+    background: var(--pd-gradient-hero);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.pd-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+}
+
+.pd-cta-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.pd-cta-content h2 {
+    font-size: 3rem;
+    color: var(--pd-white);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.pd-cta-content p {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}
+
+.pd-cta-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 500px;
+    }
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 1199px) {
+    .pd-hero-title {
+        font-size: 3rem;
+    }
+    
+    .pd-section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .pd-hero {
+        padding: 80px 0 60px;
+        min-height: auto;
+    }
+    
+    .pd-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .pd-hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .pd-hero-description {
+        max-width: 100%;
+    }
+    
+    .pd-enrollment-card {
+        margin-top: 40px;
+        position: static;
+    }
+    
+    .pd-section {
+        padding: 60px 0;
+    }
+    
+    .pd-section-title {
+        font-size: 2rem;
+    }
+    
+    .pd-cta-content h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-hero-title {
+        font-size: 2rem;
+    }
+    
+    .pd-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .pd-hero-description {
+        font-size: 1rem;
+    }
+    
+    .pd-hero-stats {
+        gap: 24px;
+    }
+    
+    .pd-stat-item strong {
+        font-size: 1.2rem;
+    }
+    
+    .pd-hero-actions {
+        flex-direction: column;
+    }
+    
+    .pd-hero-actions .pd-btn {
+        width: 100%;
+    }
+    
+    .pd-enrollment-card {
+        padding: 24px;
+    }
+    
+    .pd-amount {
+        font-size: 2.5rem;
+    }
+    
+    .pd-section {
+        padding: 40px 0;
+    }
+    
+    .pd-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .pd-content-box {
+        padding: 24px;
+    }
+    
+    .pd-highlight-box {
+        margin-top: 24px;
+        position: static;
+    }
+    
+    .pd-objectives-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pd-module-header {
+        padding: 20px;
+    }
+    
+    .pd-module-content {
+        padding: 0 20px 20px 20px;
+    }
+    
+    .pd-module-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    
+    .pd-recognition-grid,
+    .pd-application-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pd-cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .pd-cta-content p {
+        font-size: 1.1rem;
+    }
+    
+    .pd-cta-actions {
+        flex-direction: column;
+    }
+    
+    .pd-cta-actions .pd-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .pd-hero-badge {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+    
+    .pd-stat-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+    
+    .pd-stat-item i {
+        font-size: 1.5rem;
+    }
+    
+    .pd-application-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pd-application-icon {
+        margin: 0 auto;
+    }
+}

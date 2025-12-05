@@ -3,73 +3,617 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>World Academy - Premium Professional Certification</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- css links -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/homepage.css">
 </head>
 <body>
 
-    <header>
-        <div class="top-header">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/WARD-Logo-Horizontal.png" alt="World Academy Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accreditation</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn-premium">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            <div class="container">
-                <div class="row align-items-center">
+    <!-- Filter Bar -->
+    <section class="filter-bar-section">
+        <div class="container">
+            <div class="filter-bar-wrapper">
+                <form action="#" class="d-flex align-items-center flex-wrap gap-3 w-100">
+                    <div class="flex-grow-1 position-relative">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="form-control search-input" placeholder="Search for courses, programs, or certifications...">
+                    </div>
+                    <div class="filter-dropdown">
+                        <select class="form-select">
+                            <option selected>All Categories</option>
+                            <option value="1">Human Resources</option>
+                            <option value="2">Project Management</option>
+                            <option value="3">Supply Chain</option>
+                            <option value="4">Accounting & Finance</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-premium">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-                    <div class="col-lg-4">
-                        <div class="th-block1 d-flex gap-2">
-                            <div>
-                                <i class="fa-solid fa-handshake"></i>
-                                <a href="#">Partner Affiliation</a>
+    <!-- Hero Section (Swiper) -->
+    <section class="hero-slider-section">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/b_4.jpg');">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="hero-content text-center">
+                                    <h1>Excellence in Professional Certification</h1>
+                                    <p>World Academy collaborates with leading professional institutes and accreditation bodies from the UK, USA, and Singapore to deliver prestigious certification programs.</p>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="#" class="btn-premium">Explore Courses</a>
+                                        <a href="#" class="btn-premium-outline">Contact Us</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-user-tie"></i>
-                                <a href="#">Trainer Affiliation</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/geometric_perspective_line_pattern_background.jpg');">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="hero-content text-center">
+                                    <h1>Global Accreditation & Recognition</h1>
+                                    <p>Our programs are recognized worldwide, giving you a competitive edge in the global market. Partnered with SHRM, HRCI, and more.</p>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="#" class="btn-premium">View Accreditations</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="th-block2 mx-auto">
-                            <img class="logo img-fluid" src="./images/WARD-Logo-Horizontal.png" alt="">
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/line-style-hexa.jpg');">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="hero-content text-center">
+                                    <h1>Empowering Global Leaders</h1>
+                                    <p>Unlock your potential with World Academy's premium professional development programs. Designed for excellence, tailored for you.</p>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="#" class="btn-premium">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-4 d-flex justify-content-end">
-                        <div class="th-block3">
-                            <i class="fa-solid fa-right-to-bracket"></i> <a href="">Login / Register</a>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
-            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
+    </section>
 
+    <!-- Accreditation Strip -->
+    <div class="accreditation-strip">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center g-4">
+                <div class="col-lg-3 col-6">
+                    <div class="accreditation-item">
+                        <img src="./images/recog_shrm.png" alt="SHRM">
+                        <div class="text-start">
+                            <small class="d-block fw-bold">SHRM</small>
+                            <small class="text-muted">Academically Aligned</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="accreditation-item">
+                        <img src="./images/recog_hrci.png" alt="HRCI">
+                        <div class="text-start">
+                            <small class="d-block fw-bold">HRCI®</small>
+                            <small class="text-muted">Academic Provider</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="accreditation-item">
+                        <img src="./images/recod_camb.png" alt="Cambridge">
+                        <div class="text-start">
+                            <small class="d-block fw-bold">Cambridge</small>
+                            <small class="text-muted">Recognized Centre</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="accreditation-item">
+                        <i class="fa-solid fa-users fa-2x text-muted"></i>
+                        <div class="text-start ms-2">
+                            <small class="d-block fw-bold">Retention</small>
+                            <small class="text-muted">50%+ Return Rate</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="nav-header"></div>
-    </header>
-    
+    <!-- Top Categories -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span>Explore Our Programs</span>
+                <h2>Top Categories</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-graduation-cap category-icon"></i>
+                        <h5>Diploma</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-users-gear category-icon"></i>
+                        <h5>Human Resource</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-list-check category-icon"></i>
+                        <h5>Project Management</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-truck-fast category-icon"></i>
+                        <h5>Supply Chain</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-calculator category-icon"></i>
+                        <h5>Accounting & Finance</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-briefcase category-icon"></i>
+                        <h5>Business Management</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-helmet-safety category-icon"></i>
+                        <h5>Health & Safety</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="category-card">
+                        <i class="fa-solid fa-certificate category-icon"></i>
+                        <h5>Professional Master's</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <span>Why Choose World Academy</span>
+                <h2>Elevate Your Career</h2>
+            </div>
+            
+            <div class="row align-items-center feature-row">
+                <div class="col-lg-6">
+                    <div class="feature-content">
+                        <h3>Post Graduate Diplomas Designed for Working Professionals</h3>
+                        <p>Earn a UK-accredited Post Graduate Diploma with a curriculum tailored for real-world application. Our programs combine flexible learning, industry-specific knowledge, and hands-on tools to help you excel—without compromising your career.</p>
+                        <a href="#" class="btn-premium">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/b_4.jpg" alt="Working Professionals" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row align-items-center feature-row flex-row-reverse">
+                <div class="col-lg-6">
+                    <div class="feature-content">
+                        <h3>Build In-Demand Competencies for Career Growth</h3>
+                        <p>Success isn’t just about knowledge—it’s about execution. Our A3 Formula (Attend, Acquire, Accelerate) ensures professionals don’t just learn but apply skills effectively. From leadership to technical expertise, our competency-based programs bridge the gap between training and workplace success.</p>
+                        <a href="#" class="btn-premium">Discover A3 Formula</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/youtube-thumb.jpg" alt="Career Growth" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row align-items-center feature-row">
+                <div class="col-lg-6">
+                    <div class="feature-content">
+                        <h3>Connect with a Global Network of Experts</h3>
+                        <p>When you join World Academy, you gain more than a certification—you become part of an international professional community. Learn from global experts, exchange best practices, and unlock opportunities for cross-border career advancement.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/b_4.jpg" alt="Global Network" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-title">
+                <span>Experience World Academy</span>
+                <h2>See Our Impact</h2>
+            </div>
+            <div class="video-wrapper">
+                <img src="./images/youtube-thumb.jpg" alt="Video Thumbnail">
+                <div class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span>Success Stories</span>
+                <h2>What Our Graduates Say</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"I invested my time & resources here and there in professional development before knowing WARD. If I could know about WARD 2 years before, I would be in good position."</p>
+                        <div class="testimonial-author">
+                            <h5>Jackobs Williums</h5>
+                            <span>HR Professional, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Certified Professional course from WARD enhanced my competency level to perform my job in the organization. Courses are highly application focused. MUST do course for professionals."</p>
+                        <div class="testimonial-author">
+                            <h5>Albarto Kindler</h5>
+                            <span>Business Development Manager, Malawi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"After completing cHRBP 2.0, I could save a huge amount for the organization and the management has enrich my role and placed me in bigger position. I am grateful to WARD."</p>
+                        <div class="testimonial-author">
+                            <h5>Binya Chaplin</h5>
+                            <span>HR Professional, South Sudan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Career?</h2>
+            <p class="mb-4">Join thousands of professionals who have elevated their skills with World Academy.</p>
+            <a href="#" class="btn-premium-outline">Request a Call Back</a>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Office Locations Section -->
+    <section class="office-section section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <span>Global Presence</span>
+                <h2>Our Offices</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="nav flex-column nav-pills office-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-uk-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk" type="button" role="tab">UK Registered Office</button>
+                        <button class="nav-link" id="v-pills-uk-op-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uk-op" type="button" role="tab">UK Operational Office</button>
+                        <button class="nav-link" id="v-pills-bd-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bd" type="button" role="tab">Bangladesh</button>
+                        <button class="nav-link" id="v-pills-my-tab" data-bs-toggle="pill" data-bs-target="#v-pills-my" type="button" role="tab">Malaysia</button>
+                        <button class="nav-link" id="v-pills-ghana-accra-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ghana-accra" type="button" role="tab">Ghana (Accra)</button>
+                        <button class="nav-link" id="v-pills-ghana-east-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ghana-east" type="button" role="tab">Ghana (Eastern)</button>
+                        <button class="nav-link" id="v-pills-tanzania-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tanzania" type="button" role="tab">Tanzania</button>
+                        <button class="nav-link" id="v-pills-uganda-tab" data-bs-toggle="pill" data-bs-target="#v-pills-uganda" type="button" role="tab">Uganda</button>
+                        <button class="nav-link" id="v-pills-nigeria-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nigeria" type="button" role="tab">Nigeria</button>
+                        <button class="nav-link" id="v-pills-kenya-tab" data-bs-toggle="pill" data-bs-target="#v-pills-kenya" type="button" role="tab">Kenya</button>
+                        <button class="nav-link" id="v-pills-philippines-tab" data-bs-toggle="pill" data-bs-target="#v-pills-philippines" type="button" role="tab">Philippines</button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content office-content" id="v-pills-tabContent">
+                        <!-- UK Registered -->
+                        <div class="tab-pane fade show active" id="v-pills-uk" role="tabpanel">
+                            <div class="office-card">
+                                <h3>UK Registered Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> info@worldacademy.uk</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- UK Operational -->
+                        <div class="tab-pane fade" id="v-pills-uk-op" role="tabpanel">
+                            <div class="office-card">
+                                <h3>UK Operational Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> info@worldacademy.uk</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bangladesh -->
+                        <div class="tab-pane fade" id="v-pills-bd" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Bangladesh Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> bangladesh@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Malaysia -->
+                        <div class="tab-pane fade" id="v-pills-my" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Malaysia Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> malaysia@worldacademy.uk</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ghana Accra -->
+                        <div class="tab-pane fade" id="v-pills-ghana-accra" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Ghana (Accra) Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> accra.ghana@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ghana East -->
+                        <div class="tab-pane fade" id="v-pills-ghana-east" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Ghana (Eastern Region) Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> east.ghana@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tanzania -->
+                        <div class="tab-pane fade" id="v-pills-tanzania" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Tanzania Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> tanzania@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Uganda -->
+                        <div class="tab-pane fade" id="v-pills-uganda" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Uganda Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> uganda@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nigeria -->
+                        <div class="tab-pane fade" id="v-pills-nigeria" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Nigeria Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> nigeria@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kenya -->
+                        <div class="tab-pane fade" id="v-pills-kenya" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Kenya Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> kenya@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Philippines -->
+                        <div class="tab-pane fade" id="v-pills-philippines" role="tabpanel">
+                            <div class="office-card">
+                                <h3>Philippines Contact Office</h3>
+                                <p><i class="fa-solid fa-envelope me-2"></i> philippines@worldacademyuk.com</p>
+                                <div class="map-placeholder">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Map View Placeholder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="footer-widget">
+                        <img src="./images/WARD-Logo-Horizontal.png" alt="Logo" class="mb-4 bg-white p-2 rounded" style="max-height: 50px;">
+                        <p>World Academy for Research & Development – Trusted since 2008 for globally recognized credentials and strategic partnerships.</p>
+                        <div class="social-links mt-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="footer-widget">
+                        <h4>Our Offices</h4>
+                        <ul class="office-list list-unstyled">
+                            <li><i class="fa-solid fa-location-dot"></i> UK Registered Office</li>
+                            <li><i class="fa-solid fa-location-dot"></i> Bangladesh Contact Office</li>
+                            <li><i class="fa-solid fa-location-dot"></i> Malaysia Contact Office</li>
+                            <li><i class="fa-solid fa-location-dot"></i> Ghana (Accra) Contact Office</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#">Online Courses</a></li>
+                            <li><a href="#">Upcoming Sessions</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="mailto:info@worldacademy.uk">info@worldacademy.uk</a></li>
+                            <li><a href="mailto:malaysia@worldacademy.uk">malaysia@worldacademy.uk</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 World Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <!-- fontawesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 
-    <!-- main js links -->
-    <script src="./js/main.css"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.padding = '10px 0';
+                document.querySelector('.navbar').style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            } else {
+                document.querySelector('.navbar').style.padding = '15px 0';
+                document.querySelector('.navbar').style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
+            }
+        });
+
+        // Initialize Swiper
+        var swiper = new Swiper(".heroSwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
