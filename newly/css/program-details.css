@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pd-hero-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--pd-white);
     margin-bottom: 16px;
     font-weight: 900;
@@ -225,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pd-price-tag {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     margin-bottom: 12px;
 }
@@ -1062,6 +1063,156 @@ h1, h2, h3, h4, h5, h6 {
     width: 40px;
     border-radius: var(--pd-radius-full);
 }
+
+
+/* ========================================
+   Learning Outcomes - Compact Grid Design
+   ======================================== */
+.pd-outcomes {
+    background: var(--pd-white);
+}
+
+.pd-outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.pd-outcome-card {
+    position: relative;
+    padding: 32px 28px;
+    background: linear-gradient(135deg, rgba(113, 96, 39, 0.03) 0%, rgba(251, 167, 7, 0.03) 100%);
+    border-radius: var(--pd-radius-lg);
+    /* border-left: 4px solid var(--pd-primary); */
+    transition: var(--pd-transition);
+    overflow: hidden;
+}
+
+.pd-outcome-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(113, 96, 39, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.pd-outcome-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--pd-shadow-lg);
+    border-left-color: var(--pd-accent);
+    background: linear-gradient(135deg, rgba(113, 96, 39, 0.05) 0%, rgba(251, 167, 7, 0.05) 100%);
+}
+
+.pd-outcome-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--pd-primary);
+    opacity: 0.15;
+    line-height: 1;
+}
+
+.pd-outcome-icon-small {
+    width: 60px;
+    height: 60px;
+    background: var(--pd-gradient-primary);
+    border-radius: var(--pd-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(113, 96, 39, 0.3);
+    transition: var(--pd-transition);
+}
+
+.pd-outcome-card:hover .pd-outcome-icon-small {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.pd-outcome-icon-small i {
+    font-size: 1.8rem;
+    color: var(--pd-white);
+}
+
+.pd-outcome-card h3 {
+    font-size: 1.3rem;
+    color: var(--pd-dark);
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.pd-outcome-card p {
+    font-size: 0.95rem;
+    color: var(--pd-text);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive Design for Outcomes */
+@media (max-width: 991px) {
+    .pd-outcomes-grid {
+        gap: 20px;
+    }
+    
+    .pd-outcome-card {
+        padding: 28px 24px;
+    }
+    
+    .pd-outcome-icon-small {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .pd-outcome-icon-small i {
+        font-size: 1.6rem;
+    }
+    
+    .pd-outcome-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .pd-outcomes-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .pd-outcome-card {
+        padding: 24px 20px;
+    }
+    
+    .pd-outcome-number {
+        font-size: 2.5rem;
+        top: 16px;
+        right: 16px;
+    }
+    
+    .pd-outcome-icon-small {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .pd-outcome-icon-small i {
+        font-size: 1.5rem;
+    }
+    
+    .pd-outcome-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .pd-outcome-card p {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* ========================================
    Competencies Section
