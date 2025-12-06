@@ -361,3 +361,34 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Program Details Page Initialized Successfully!');
 });
+
+// ========================================
+    // Program Intro Video Player
+    // ========================================
+    const videoPlayBtn = document.getElementById('videoPlayBtn');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const videoOverlay = document.querySelector('.pd-video-overlay');
+    const videoThumbnail = document.querySelector('.pd-video-thumbnail');
+    
+    if (videoPlayBtn) {
+        videoPlayBtn.addEventListener('click', function() {
+            // Hide thumbnail and overlay
+            if (videoThumbnail) videoThumbnail.style.display = 'none';
+            if (videoOverlay) videoOverlay.style.display = 'none';
+            
+            // Show video player
+            if (videoPlayer) {
+                videoPlayer.style.display = 'block';
+                
+                // Auto-play video (for YouTube iframe)
+                const iframe = videoPlayer.querySelector('iframe');
+                if (iframe) {
+                    const src = iframe.src;
+                    // Add autoplay parameter if not already present
+                    if (!src.includes('autoplay=1')) {
+                        iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
+                    }
+                }
+            }
+        });
+    }
