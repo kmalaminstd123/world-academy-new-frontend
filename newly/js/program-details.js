@@ -29,6 +29,44 @@ document.addEventListener('DOMContentLoaded', function() {
     if (moduleItems.length > 0) {
         moduleItems[0].classList.add('active');
     }
+
+    // ========================================
+    // Testimonial Swiper Slider
+    // ========================================
+    const testimonialSwiper = new Swiper('.pd-testimonial-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            // Mobile
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            // Tablet
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 25,
+            },
+            // Desktop
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        },
+    });
     
     // ========================================
     // Smooth Scroll for Anchor Links
@@ -129,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const x = e.clientX - rect.left - size / 2;
             const y = e.clientY - rect.top - size / 2;
             
-            ripple.style.width = ripple.style.height = size + 'px';
+            // ripple.style.width = ripple.style.height = size + 'px';
             ripple.style.left = x + 'px';
             ripple.style.top = y + 'px';
             ripple.classList.add('ripple');
