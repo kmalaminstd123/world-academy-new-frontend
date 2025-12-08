@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional HR Certification - Physical Session - World Academy</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/physical-course-details.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="pcd-hero">
+        <div class="pcd-hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="pcd-hero-badge">
+                        <i class="fas fa-users"></i>
+                        <span>Physical Session Program</span>
+                    </div>
+                    <h1 class="pcd-hero-title">Certified Human Resource Business Partner</h1>
+                    <p class="pcd-hero-subtitle">CHRBP - Physical Session (Malaysia)</p>
+                    <p class="pcd-hero-description">
+                        Experience immersive, hands-on learning in our state-of-the-art training facility. 
+                        This intensive physical session combines expert-led instruction, interactive workshops, 
+                        and real-world case studies to transform you into a strategic HR business partner.
+                    </p>
+                    
+                    <div class="pcd-hero-stats">
+                        <div class="pcd-stat-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <strong>5 Days</strong>
+                                <span>Intensive Training</span>
+                            </div>
+                        </div>
+                        <div class="pcd-stat-item">
+                            <i class="fas fa-users-class"></i>
+                            <div>
+                                <strong>20 Max</strong>
+                                <span>Class Size</span>
+                            </div>
+                        </div>
+                        <div class="pcd-stat-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <strong>Certified</strong>
+                                <span>Upon Completion</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pcd-hero-actions">
+                        <button class="pcd-btn pcd-btn-primary">
+                            <i class="fas fa-user-plus"></i>
+                            Reserve Your Seat
+                        </button>
+                        <button class="pcd-btn pcd-btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download Brochure
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pcd-enrollment-card">
+                        
+
+                        <div class="pcd-info-grid">
+                            <div class="pcd-info-item">
+                                <div class="pcd-info-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <div class="pcd-info-content">
+                                    <small>Program Mode</small>
+                                    <strong>Physical Session</strong>
+                                </div>
+                            </div>
+
+                            <div class="pcd-info-item">
+                                <div class="pcd-info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="pcd-info-content">
+                                    <small>Program Time</small>
+                                    <strong>9:00 AM - 5:00 PM</strong>
+                                </div>
+                            </div>
+
+                            <div class="pcd-info-item">
+                                <div class="pcd-info-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="pcd-info-content">
+                                    <small>Program Date</small>
+                                    <strong>15-19 Jan, 2026</strong>
+                                </div>
+                            </div>
+
+                            <div class="pcd-info-item">
+                                <div class="pcd-info-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="pcd-info-content">
+                                    <small>Fees (Self Pay)</small>
+                                    <strong>$1,299</strong>
+                                </div>
+                            </div>
+
+                            <div class="pcd-info-item">
+                                <div class="pcd-info-icon">
+                                    <i class="fas fa-map-pin"></i>
+                                </div>
+                                <div class="pcd-info-content">
+                                    <small>Venue</small>
+                                    <strong>Kuala Lumpur, Malaysia</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <button class="pcd-btn pcd-btn-enroll">
+                            Enroll Now
+                        </button>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Intro Video Section -->
+    <section class="pcd-section pcd-video-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="pcd-video-wrapper">
+                        <div class="pcd-video-container">
+                            <img src="https://via.placeholder.com/800x450/716027/ffffff?text=Physical+Session+Preview" alt="Program Introduction" class="pcd-video-thumbnail">
+                            
+                            <div class="pcd-video-overlay">
+                                <button class="pcd-play-button" id="videoPlayBtn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="pcd-video-player" id="videoPlayer" style="display: none;">
+                                <iframe 
+                                    width="100%" 
+                                    height="100%" 
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" 
+                                    title="Program Introduction Video" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="pcd-video-badge">
+                            <i class="fas fa-video"></i>
+                            <span>Watch Facility Tour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="pcd-video-content">
+                        <span class="pcd-section-label">Experience Excellence</span>
+                        <h2 class="pcd-video-title">World-Class Training Facility</h2>
+                        <p class="pcd-video-description">
+                            Our Kuala Lumpur training center offers a premium learning environment with 
+                            modern amenities, collaborative spaces, and cutting-edge technology to enhance 
+                            your learning experience.
+                        </p>
+                        
+                        <div class="pcd-facility-highlights">
+                            <div class="pcd-highlight-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>High-Speed WiFi</span>
+                            </div>
+                            <div class="pcd-highlight-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Refreshments Included</span>
+                            </div>
+                            <div class="pcd-highlight-item">
+                                <i class="fas fa-parking"></i>
+                                <span>Free Parking</span>
+                            </div>
+                            <div class="pcd-highlight-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>Lunch Provided</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Objectives Section -->
+    <section class="pcd-section pcd-objectives">
+        <div class="container">
+            <div class="pcd-section-header text-center">
+                <span class="pcd-section-label">What You'll Master</span>
+                <h2 class="pcd-section-title">Course Objectives</h2>
+                <p class="pcd-section-description">
+                    Develop strategic HR capabilities through intensive, hands-on training
+                </p>
+            </div>
+
+            <div class="pcd-objectives-grid">
+                <div class="pcd-objective-card">
+                    <div class="pcd-objective-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Strategic Business Partnering</h4>
+                    <p>Master the art of aligning HR strategies with business objectives and becoming a trusted advisor to leadership</p>
+                </div>
+
+                <div class="pcd-objective-card">
+                    <div class="pcd-objective-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Data-Driven HR Analytics</h4>
+                    <p>Learn to leverage HR metrics and analytics to drive informed decision-making and demonstrate business impact</p>
+                </div>
+
+                <div class="pcd-objective-card">
+                    <div class="pcd-objective-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h4>Talent Management Excellence</h4>
+                    <p>Develop comprehensive strategies for attracting, developing, and retaining top talent in your organization</p>
+                </div>
+
+                <div class="pcd-objective-card">
+                    <div class="pcd-objective-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Change Leadership</h4>
+                    <p>Build skills to lead organizational change initiatives and drive cultural transformation effectively</p>
+                </div>
+
+                <div class="pcd-objective-card">
+                    <div class="pcd-objective-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h4>Employee Relations</h4>
+                    <p>Master conflict resolution, employee engagement, and creating positive workplace cultures</p>
+                </div>
+
+                <div class="pcd-objective-card">
+                    <div class="pcd-objective-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h4>Performance Optimization</h4>
+                    <p>Implement effective performance management systems that drive results and employee development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Outcomes Section -->
+    <section class="pcd-section pcd-outcomes">
+        <div class="container">
+            <div class="pcd-section-header text-center">
+                <span class="pcd-section-label">Your Transformation</span>
+                <h2 class="pcd-section-title">Learning Outcomes</h2>
+                <p class="pcd-section-description">
+                    By the end of this program, you will have achieved these key outcomes
+                </p>
+            </div>
+
+            <div class="pcd-outcomes-grid">
+                <div class="pcd-outcome-card">
+                    <div class="pcd-outcome-number">01</div>
+                    <div class="pcd-outcome-icon-small">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Strategic HR Mindset</h3>
+                    <p>Think and act as a strategic business partner who contributes to organizational success</p>
+                </div>
+
+                <div class="pcd-outcome-card">
+                    <div class="pcd-outcome-number">02</div>
+                    <div class="pcd-outcome-icon-small">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Business Acumen</h3>
+                    <p>Understand business operations, financial metrics, and how HR impacts the bottom line</p>
+                </div>
+
+                <div class="pcd-outcome-card">
+                    <div class="pcd-outcome-number">03</div>
+                    <div class="pcd-outcome-icon-small">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Stakeholder Influence</h3>
+                    <p>Build relationships and influence key stakeholders across all organizational levels</p>
+                </div>
+
+                <div class="pcd-outcome-card">
+                    <div class="pcd-outcome-number">04</div>
+                    <div class="pcd-outcome-icon-small">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics Proficiency</h3>
+                    <p>Create compelling HR dashboards and use data to tell stories that drive action</p>
+                </div>
+
+                <div class="pcd-outcome-card">
+                    <div class="pcd-outcome-number">05</div>
+                    <div class="pcd-outcome-icon-small">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Change Agent Skills</h3>
+                    <p>Lead transformation initiatives and navigate organizational change with confidence</p>
+                </div>
+
+                <div class="pcd-outcome-card">
+                    <div class="pcd-outcome-number">06</div>
+                    <div class="pcd-outcome-icon-small">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Professional Certification</h3>
+                    <p>Earn a globally recognized certification that validates your HR business partnering expertise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section class="pcd-section pcd-competencies">
+        <div class="container">
+            <div class="pcd-section-header text-center">
+                <span class="pcd-section-label">Skills Development</span>
+                <h2 class="pcd-section-title">Core Competencies</h2>
+                <p class="pcd-section-description">
+                    Master these essential competencies through practical application and expert guidance
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>Business Partnership</h4>
+                        <p>Build trusted relationships with business leaders and align HR initiatives with strategic goals</p>
+                        <div class="pcd-competency-level">
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <h4>Financial Acumen</h4>
+                        <p>Understand financial statements, budgeting, and ROI to make data-driven HR decisions</p>
+                        <div class="pcd-competency-level">
+                            <span>Intermediate Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Talent Strategy</h4>
+                        <p>Design and implement comprehensive talent acquisition, development, and retention strategies</p>
+                        <div class="pcd-competency-level">
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Process Optimization</h4>
+                        <p>Streamline HR processes and implement best practices for operational excellence</p>
+                        <div class="pcd-competency-level">
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Change Management</h4>
+                        <p>Lead organizational transformation and manage resistance to change effectively</p>
+                        <div class="pcd-competency-level">
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>HR Analytics</h4>
+                        <p>Master HR metrics, dashboards, and predictive analytics for strategic insights</p>
+                        <div class="pcd-competency-level">
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Stakeholder Management</h4>
+                        <p>Influence and collaborate with stakeholders at all organizational levels</p>
+                        <div class="pcd-competency-level">
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4>Employment Law</h4>
+                        <p>Navigate legal compliance and mitigate employment-related risks</p>
+                        <div class="pcd-competency-level">
+                            <span>Intermediate Level</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pcd-competency-card">
+                        <div class="pcd-competency-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Cultural Intelligence</h4>
+                        <p>Work effectively across diverse cultures and build inclusive workplace environments</p>
+                        <div class="pcd-competency-level">
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Modules Section -->
+    <section class="pcd-section pcd-modules">
+        <div class="container">
+            <div class="pcd-section-header text-center">
+                <span class="pcd-section-label">Curriculum</span>
+                <h2 class="pcd-section-title">Program Modules</h2>
+                <p class="pcd-section-description">
+                    8 comprehensive modules delivered over 5 intensive days
+                </p>
+            </div>
+
+            <div class="pcd-modules-container">
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">01</div>
+                        <h4>Introduction to HR Business Partnering</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Understanding the evolution of HR from administrative function to strategic business partner. Explore the HRBP model, key competencies, and the value proposition of strategic HR.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> Evolution of HR Business Partnering</li>
+                            <li><i class="fas fa-check-circle"></i> HRBP Competency Framework</li>
+                            <li><i class="fas fa-check-circle"></i> Building Credibility with Business Leaders</li>
+                            <li><i class="fas fa-check-circle"></i> The Three-Legged Stool Model</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">02</div>
+                        <h4>Business Acumen & Financial Literacy</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Develop essential business and financial knowledge to speak the language of business leaders and demonstrate HR's impact on organizational performance.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> Understanding Financial Statements</li>
+                            <li><i class="fas fa-check-circle"></i> Business Strategy & Competitive Analysis</li>
+                            <li><i class="fas fa-check-circle"></i> HR ROI & Value Measurement</li>
+                            <li><i class="fas fa-check-circle"></i> Budget Management for HR</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">03</div>
+                        <h4>Strategic Talent Management</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Master end-to-end talent management strategies from workforce planning to succession planning, ensuring organizational capability for future success.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> Workforce Planning & Analytics</li>
+                            <li><i class="fas fa-check-circle"></i> Talent Acquisition Strategy</li>
+                            <li><i class="fas fa-check-circle"></i> High-Potential Identification</li>
+                            <li><i class="fas fa-check-circle"></i> Succession Planning Frameworks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">04</div>
+                        <h4>Performance Management & Coaching</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Design and implement performance management systems that drive results while developing coaching skills to support managers and employees.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> Modern Performance Management Approaches</li>
+                            <li><i class="fas fa-check-circle"></i> Goal Setting & OKRs</li>
+                            <li><i class="fas fa-check-circle"></i> Coaching & Feedback Techniques</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Improvement Plans</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">05</div>
+                        <h4>Employee Engagement & Culture</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Learn to measure and enhance employee engagement while shaping organizational culture to support business objectives and employee wellbeing.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> Employee Engagement Drivers</li>
+                            <li><i class="fas fa-check-circle"></i> Culture Assessment & Design</li>
+                            <li><i class="fas fa-check-circle"></i> Employee Experience Mapping</li>
+                            <li><i class="fas fa-check-circle"></i> Retention Strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">06</div>
+                        <h4>Change Management & Organizational Development</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Lead organizational change initiatives using proven frameworks and develop skills to manage resistance and drive adoption.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> Change Management Models (ADKAR, Kotter)</li>
+                            <li><i class="fas fa-check-circle"></i> Stakeholder Analysis & Engagement</li>
+                            <li><i class="fas fa-check-circle"></i> Managing Resistance to Change</li>
+                            <li><i class="fas fa-check-circle"></i> Organizational Design Principles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">07</div>
+                        <h4>HR Analytics & Metrics</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Master HR analytics to make data-driven decisions and create compelling dashboards that communicate HR's strategic value to leadership.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> Key HR Metrics & KPIs</li>
+                            <li><i class="fas fa-check-circle"></i> Predictive Analytics in HR</li>
+                            <li><i class="fas fa-check-circle"></i> Dashboard Design & Visualization</li>
+                            <li><i class="fas fa-check-circle"></i> Data Storytelling for Impact</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pcd-module-item">
+                    <div class="pcd-module-header">
+                        <div class="pcd-module-number">08</div>
+                        <h4>Strategic HR Planning & Consulting</h4>
+                        <button class="pcd-module-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="pcd-module-content">
+                        <p>Develop strategic HR plans aligned with business objectives and build internal consulting skills to advise leaders on people-related challenges.</p>
+                        <ul class="pcd-module-topics">
+                            <li><i class="fas fa-check-circle"></i> HR Strategy Development</li>
+                            <li><i class="fas fa-check-circle"></i> Internal Consulting Skills</li>
+                            <li><i class="fas fa-check-circle"></i> Influence & Negotiation</li>
+                            <li><i class="fas fa-check-circle"></i> Building Your HRBP Action Plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance Section -->
+    <section class="pcd-section pcd-recognition">
+        <div class="container">
+            <div class="pcd-section-header text-center">
+                <span class="pcd-section-label">Globally Recognized</span>
+                <h2 class="pcd-section-title">Validated & Quality Assured</h2>
+                <p class="pcd-section-description">
+                    Our programs meet the highest international standards for professional development
+                </p>
+            </div>
+
+            <div class="pcd-recognition-grid">
+                <div class="pcd-recognition-card">
+                    <div class="pcd-recognition-logo">
+                        <img src="./images/recog_shrm.png" alt="SHRM">
+                    </div>
+                    <h4>SHRM</h4>
+                    <p>World Academy is recognized by SHRM to offer Professional Development Credits (PDCs) for the SHRM-CP® or SHRM-SCP®.</p>
+                </div>
+
+                <div class="pcd-recognition-card pcd-featured">
+                    <div class="pcd-recognition-logo">
+                        <img src="./images/recod_camb.png" alt="CAP UK">
+                    </div>
+                    <h4>CAP (UK)</h4>
+                    <p>This program is Validated and Quality Assured by Cambridge Academy of Professionals (CAP) UK.</p>
+                </div>
+
+                <div class="pcd-recognition-card">
+                    <div class="pcd-recognition-logo">
+                        <img src="./images/recog_hrci.png" alt="HRCI">
+                    </div>
+                    <h4>HRCI</h4>
+                    <p>This Activity has met HR Certification Institute's® (HRCI®) criteria for recertification credit pre-approval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="pcd-section pcd-testimonials">
+        <div class="container">
+            <div class="pcd-section-header text-center">
+                <span class="pcd-section-label">Success Stories</span>
+                <h2 class="pcd-section-title">What Our Graduates Say</h2>
+                <p class="pcd-section-description">
+                    Hear from professionals who transformed their careers through our physical sessions
+                </p>
+            </div>
+
+            <div class="swiper pcd-testimonial-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="pcd-testimonial-card">
+                            <div class="pcd-testimonial-quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="pcd-testimonial-text">"The physical session in Kuala Lumpur was transformative! The hands-on workshops and face-to-face interactions with instructors and peers created an unmatched learning experience. I've implemented strategies from this program that have significantly improved our HR operations."</p>
+                            <div class="pcd-testimonial-author">
+                                <div class="pcd-author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="pcd-author-info">
+                                    <h5>Priya Sharma</h5>
+                                    <p>HR Business Partner</p>
+                                    <div class="pcd-author-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Singapore</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pcd-testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="pcd-testimonial-card">
+                            <div class="pcd-testimonial-quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="pcd-testimonial-text">"The networking opportunities during the physical session were invaluable. I connected with HR professionals from across Asia, and we continue to share insights and best practices. The intensive format kept us engaged and the practical exercises were immediately applicable."</p>
+                            <div class="pcd-testimonial-author">
+                                <div class="pcd-author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="pcd-author-info">
+                                    <h5>Michael Tan</h5>
+                                    <p>Head of Talent</p>
+                                    <div class="pcd-author-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Malaysia</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pcd-testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="pcd-testimonial-card">
+                            <div class="pcd-testimonial-quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="pcd-testimonial-text">"I appreciated the immersive learning environment. Being away from daily work distractions allowed me to fully focus on developing my skills. The instructors were exceptional, and the case studies were relevant to real-world challenges I face every day."</p>
+                            <div class="pcd-testimonial-author">
+                                <div class="pcd-author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="pcd-author-info">
+                                    <h5>Sarah Abdullah</h5>
+                                    <p>Senior HR Manager</p>
+                                    <div class="pcd-author-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>UAE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pcd-testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pcd-cta">
+        <div class="container">
+            <div class="pcd-cta-content">
+                <h2>Ready to Transform Your HR Career?</h2>
+                <p>Join us in Kuala Lumpur for an intensive, hands-on learning experience</p>
+                <div class="pcd-cta-actions">
+                    <button class="pcd-btn pcd-btn-light">
+                        <i class="fas fa-rocket"></i>
+                        Reserve Your Seat Now
+                    </button>
+                    <button class="pcd-btn pcd-btn-outline-light">
+                        <i class="fas fa-phone"></i>
+                        Contact Admissions
+                    </button>
+                </div>
+                <div class="pcd-cta-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Limited to 20 participants for personalized attention</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./js/physical-course-details.js"></script>
+</body>
+</html>
