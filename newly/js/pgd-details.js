@@ -111,3 +111,10 @@ document.addEventListener('DOMContentLoaded', function() {
         firstFaq.classList.add('active');
     }
 });
+
+
+
+// test case
+const arr = []
+
+arr.indexOf()
