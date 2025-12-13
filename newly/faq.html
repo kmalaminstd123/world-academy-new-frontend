@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - World Academy</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/program-details.css">
+    <link rel="stylesheet" href="./css/faq.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="faq-hero-content">
+                <span class="faq-hero-badge">
+                    <i class="fas fa-question-circle"></i>
+                    Help Center
+                </span>
+                <h1 class="faq-hero-title">Frequently Asked Questions</h1>
+                <p class="faq-hero-subtitle">Find answers to common questions about our programs, enrollment, and more</p>
+                
+                <!-- Search Box -->
+                <div class="faq-search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="faqSearch" placeholder="Search for answers...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="faq-filters">
+                <button class="faq-filter-btn active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    All Questions
+                </button>
+                <button class="faq-filter-btn" data-category="get-to-know">
+                    <i class="fas fa-info-circle"></i>
+                    Get to Know Us
+                </button>
+                <button class="faq-filter-btn" data-category="learning">
+                    <i class="fas fa-graduation-cap"></i>
+                    Learning Experience
+                </button>
+                <button class="faq-filter-btn" data-category="course">
+                    <i class="fas fa-book"></i>
+                    Course Details
+                </button>
+                <button class="faq-filter-btn" data-category="payment">
+                    <i class="fas fa-credit-card"></i>
+                    Payment & Scholarships
+                </button>
+                <button class="faq-filter-btn" data-category="exams">
+                    <i class="fas fa-clipboard-check"></i>
+                    Exams & Evaluations
+                </button>
+                <button class="faq-filter-btn" data-category="certificate">
+                    <i class="fas fa-certificate"></i>
+                    Earning Certificate
+                </button>
+                <button class="faq-filter-btn" data-category="resources">
+                    <i class="fas fa-folder-open"></i>
+                    Study Resources
+                </button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="faq-container">
+                <!-- Get to Know Us -->
+                <div class="faq-item" data-category="get-to-know">
+                    <button class="faq-question">
+                        <span>What kind of training does World Academy offer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>World Academy offers various kinds of professional training for areas of Productivity, Profitability, Sustainability & Business Growth.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="get-to-know">
+                    <button class="faq-question">
+                        <span>Where is World Academy located?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our head office is located in UK and our South Asia regional office (Operations) is located in Bangladesh.</p>
+                        <p><strong>UK Office:</strong> 2677A, 182-184 High Street North, East Ham, London E6 2JA, UK.</p>
+                        <p><strong>South Asia Regional Office:</strong> 5/12, Lalmatia, Dhaka, Bangladesh.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="get-to-know">
+                    <button class="faq-question">
+                        <span>Is World Academy registered under the UK government?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, World Academy is registered under the UK government with a Learning Provider (UKPRN: 10091773).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="get-to-know">
+                    <button class="faq-question">
+                        <span>What certifications does World Academy have?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>World Academy has global ISO certification for "Learning Services Outside Formal Education" (ISO 29993:2017). World Academy also has accreditation from QAHE (www.qahe.org).</p>
+                    </div>
+                </div>
+
+                <!-- Learning Experience -->
+                <div class="faq-item" data-category="learning">
+                    <button class="faq-question">
+                        <span>How are the modules taught?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The modules are taught either LIVE Session via Zoom or you can also have a self-paced program where you can study by yourself.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="learning">
+                    <button class="faq-question">
+                        <span>Are there any on-campus courses?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, there are no physical classes. If you enroll in the LIVE session, you will have access to Zoom sessions where you can interact with the trainers/experts.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="learning">
+                    <button class="faq-question">
+                        <span>Can I ask questions during the course?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You will have the option of asking the trainer during the LIVE session. At the end of each session, you will get the opportunity to ask questions. If you are doing a Self-Study course, you will have the option of asking questions through our Learning Management System.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="learning">
+                    <button class="faq-question">
+                        <span>Where will I find the study materials?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>After enrollment to any program, you will get access to Learning Management System (LMS), and on this study platform you will find all study materials.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="learning">
+                    <button class="faq-question">
+                        <span>How long are the LIVE sessions?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our LIVE sessions are conducted via Zoom App. Sessions extend from 2 to 2.5 hours, with an aim to cover allocated modules. There will be opportunity to interact with trainers in the Q&A section. The study material will be available after each session and will be uploaded within 24 hours.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="learning">
+                    <button class="faq-question">
+                        <span>Can I access the LMS from my mobile device?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we have made the LMS accessible via any device (smartphone, laptop, desktop PC, etc.).</p>
+                    </div>
+                </div>
+
+                <!-- Course Details -->
+                <div class="faq-item" data-category="course">
+                    <button class="faq-question">
+                        <span>Are the courses paid or free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most of the courses are paid courses.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="course">
+                    <button class="faq-question">
+                        <span>Who validates the courses?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Almost all courses are validated and quality assured by ProfQual-UK, Cambridge Academy of Professionals-UK, International Professional Accreditation Council-Singapore, Academy of Business English & Communication, and many more.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="course">
+                    <button class="faq-question">
+                        <span>How do I enroll in a course?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You need to talk to our sales representative to check your eligibility. After that, you will have to complete an online registration. When you have successfully completed the online registration, then you will have to make the payment to complete the enrollment process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="course">
+                    <button class="faq-question">
+                        <span>Can I enroll in more than one program?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can enroll in more than one program, as long as both session times do not conflict.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="course">
+                    <button class="faq-question">
+                        <span>What types of programs are available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are Professional Certificate courses, Certified courses, Diploma and Post Graduate Diploma programs, Masters and MBA programs, and Doctorate programs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="course">
+                    <button class="faq-question">
+                        <span>What subject areas do you offer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project Management, Human Resource, Logistics and Supply Chain, Monitoring, Evaluation, Accountability and Learning, Talent Management, Business Communication and Managerial Competency, Business Management, Leadership and People Management, Occupation Health & Safety, Finance and Accounts, People Management.</p>
+                    </div>
+                </div>
+
+                <!-- Payment & Scholarships -->
+                <div class="faq-item" data-category="payment">
+                    <button class="faq-question">
+                        <span>Are there any discounts available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, there is scope to enroll in courses at a discounted fee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <button class="faq-question">
+                        <span>Do you offer installment facilities?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we have installment facilities. We shall give you a payment plan, and based on that you have to make the payment. If you fail to make the payment on time, you have to let us know or we shall stop your access to the Learning Management System.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <button class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We have multiple modes of payment. You can pay online via VISA/MasterCard, Bank transfer, Western Union/MoneyGram, PayPal, or you can pay through our partner in your country (if any). All transfer charges are to be borne by the participant.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <button class="faq-question">
+                        <span>Are there scholarship opportunities?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are scholarship opportunities for our Masters, MBA, and Doctorate programs.</p>
+                    </div>
+                </div>
+
+                <!-- Exams & Evaluations -->
+                <div class="faq-item" data-category="exams">
+                    <button class="faq-question">
+                        <span>How many exams will I have to take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>It depends on the program you are selecting. There are programs where there will be multiple exams, and there are programs where you just have to give one single exam.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="exams">
+                    <button class="faq-question">
+                        <span>Is the exam schedule fixed?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, the schedule is fixed if you are in a LIVE session program. But if you are in a Self-paced program, then you have to let us know and accordingly the administration will set an exam for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="exams">
+                    <button class="faq-question">
+                        <span>What happens if I fail an exam?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>If you fail to pass on your first attempt, you will get a second chance to give the exam. BUT if you fail on your second attempt and want to attempt for the third time, you will have to pay an exam fee.</p>
+                    </div>
+                </div>
+
+                <!-- Earning Certificate -->
+                <div class="faq-item" data-category="certificate">
+                    <button class="faq-question">
+                        <span>When will I receive my certificate?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>After you have successfully completed all the assessment criteria and you have received your grades, there will be an e-certificate available to you within 10-15 days of grade publishing. The hardcopy/printed version of the certificate will be distributed 3 times in a year.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="certificate">
+                    <button class="faq-question">
+                        <span>Can I verify my certificate?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All our certificates can be verified via the website of the accredited institution.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="certificate">
+                    <button class="faq-question">
+                        <span>How long is the certificate valid?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most of the certificates have life-long validity. Some require you to extend by earning credit points through performing real-time activities which will be assessed by Cambridge Academy of Professional-UK.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="certificate">
+                    <button class="faq-question">
+                        <span>Do I get a digital badge?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are programs where a digital badge from Credly (by Pearson) is also given that will take up to 10-15 days of grade publishing. You'll have the scope to check online validity anytime and the opportunity to be part of a knowledge-based community.</p>
+                    </div>
+                </div>
+
+                <!-- Study Resources -->
+                <div class="faq-item" data-category="resources">
+                    <button class="faq-question">
+                        <span>How do I access study materials?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Please log in to your dashboard, click the start button beside the course name, then click any module name at the left side menu, then click the material tab.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="resources">
+                    <button class="faq-question">
+                        <span>Can I download the study materials?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can download all study materials except the short video tutorials.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="resources">
+                    <button class="faq-question">
+                        <span>How long will I have access to study materials?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You will have access to these study materials for 2 years. Usually, the access will be available for 2 years from the course enrollment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="resources">
+                    <button class="faq-question">
+                        <span>What is the makeup exam fee?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Make-up exam with MCQ only is $10 per exam. Exam with only Questions and Answer is $20 per exam. Exam with both MCQ and Q&A will be $15 per exam.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="resources">
+                    <button class="faq-question">
+                        <span>How do I log in to the LMS?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>If this is your first course with World Academy, you will receive access credentials via system-generated email from no-reply@worldacademy.uk to your registered email. Please check inbox and spam folder. Then browse www.worldacademy.uk, click the log in button at the top menu, and use your credentials (email address and password).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="faq-no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No results found</h3>
+                <p>Try adjusting your search or filter to find what you're looking for.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pd-cta">
+        <div class="container">
+            <div class="pd-cta-content">
+                <h2>Still Have Questions?</h2>
+                <p>Our support team is here to help you with any questions you may have</p>
+                <div class="pd-cta-actions">
+                    <a href="#" class="pd-btn pd-btn-light">
+                        <i class="fas fa-envelope"></i>
+                        Contact Support
+                    </a>
+                    <a href="#" class="pd-btn pd-btn-outline-light">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./js/faq.js"></script>
+</body>
+</html>
